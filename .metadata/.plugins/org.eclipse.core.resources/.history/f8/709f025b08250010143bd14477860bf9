@@ -1,0 +1,9 @@
+package Streamsprgs;
+
+public class StreamsPrgs {
+
+	public StreamsPrgs() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

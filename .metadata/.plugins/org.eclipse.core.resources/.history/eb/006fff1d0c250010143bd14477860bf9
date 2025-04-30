@@ -1,0 +1,15 @@
+package Streamsprgs;
+import java.util.*;
+public class StreamsPrgs {
+
+	public StreamsPrgs() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static void main(String args[]) {
+		List <String> al1 = Arrays.asList("Mohan","Ram","Balu","Surya","Rohan","Lakshman");
+		al1.stream().filter(e -> e.endsWith("n")).forEach(e -> System.out.print(e+" "));
+
+	}
+
+}

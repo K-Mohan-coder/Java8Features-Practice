@@ -1,0 +1,9 @@
+package IntegerPrg;
+
+public class IntegerRepeat {
+
+	public IntegerRepeat() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

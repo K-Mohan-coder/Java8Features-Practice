@@ -1,0 +1,37 @@
+package Java8Feature;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class StreamMapPrgs {
+
+	public StreamMapPrgs() {
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	public static void main(String args[]) {
+		System.out.println("*******Stream Map*******");
+		System.out.println();
+		System.out.println("============================");
+		
+		List<Integer> al = Arrays.asList(11,22,33,54,56,67,76,87,89,90,98);
+		
+		List<String> result = al.stream().map(e->String.valueOf(e)).collect(Collectors.toList());
+		
+		System.out.println("String List : "+result);
+		System.out.println("Get the Particular by index : "+result.get(0));
+		
+		System.out.println();
+		System.out.println("============================");
+		System.out.println("Reduce Operations");
+		
+		
+		String result1=al.stream().map(e->String.valueOf(e)).reduce("",(a,b)->a+"#"+b);
+		
+		System.out.println(result1);
+		
+
+	}
+}

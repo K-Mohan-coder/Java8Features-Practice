@@ -1,0 +1,9 @@
+package Java8Feature;
+
+public class FilterExample {
+
+	public FilterExample() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

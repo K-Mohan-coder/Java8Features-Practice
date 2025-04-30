@@ -1,0 +1,54 @@
+package Java8Feature;
+
+import java.util.Arrays;
+import java.util.stream.Collectors;
+import java.util.*;
+
+public class FilterExample {
+
+	public FilterExample() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static void main(String args[]) {
+		
+		System.out.println("Terminal Operation");
+		System.out.println();
+
+		
+		List<Integer> al = Arrays.asList(11,22,33,54,56,67,76,87,89,90,98);
+		
+		System.out.println("lamda Expression");
+		System.out.println();
+
+
+		
+		//-> Lamda Expression
+		List<Integer> even = al.stream().filter(e -> (e%2 == 0)).collect(Collectors.toList());
+		List<Integer> odd = al.stream().filter(e -> (e%2 != 0)).collect(Collectors.toList());	
+		
+		System.out.println(even);
+		System.out.println(odd);
+		
+		//forEach
+		
+		System.out.println("============================");
+		System.out.println("For Each");
+		System.out.println();
+
+		al.stream().filter(e->(e%2 == 0)).forEach(e->System.out.println(e + " is Even"));
+		
+		//Reduce Example
+		System.out.println("============================");
+
+		System.out.println("Reduce Example");
+		
+		System.out.println();
+
+		int sum = al.stream().filter(e -> (e%2 != 0)).reduce(0, (a,b) -> a+b);
+		
+		
+
+	}
+
+}

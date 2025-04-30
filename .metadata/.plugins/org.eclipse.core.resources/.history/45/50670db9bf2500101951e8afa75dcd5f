@@ -1,0 +1,9 @@
+package IntegerPrg;
+
+public class StringPrgs {
+
+	public StringPrgs() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

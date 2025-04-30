@@ -1,0 +1,20 @@
+package IntegerPrg;
+
+import java.util.*;
+
+public class IntegerRepeat {
+
+	public static void main(String[] args) {
+        List<Integer> al = Arrays.asList(11, 23, 34, 45, 34, 23, 23, 34, 23, 34, 11, 54,11,22,33,44,12,12,34,54,61,53,89,89,19,80,70,89,76,12);
+
+        Map<Integer, Integer> freqMap = new HashMap<>();
+
+        for (Integer num : al) {
+            freqMap.put(num, freqMap.getOrDefault(num, 0) + 1).shortValue();
+        }
+
+        for (Map.Entry<Integer, Integer> entry : freqMap.entrySet()) {
+            System.out.println(entry.getKey() + " - " + entry.getValue());
+        }
+    }
+}

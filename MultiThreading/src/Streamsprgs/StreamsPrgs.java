@@ -1,0 +1,21 @@
+package Streamsprgs;
+import java.util.*;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+public class StreamsPrgs {
+
+	public StreamsPrgs() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static void main(String args[]) {
+		List <String> al1 = Arrays.asList("Mohan","Ram","Balu","Surya","Rohan","Lakshman");
+		List <String> al2=al1.stream().filter(e -> e.endsWith("n")).collect(Collectors.toList());
+		for(String values:al2){
+			System.out.println(values);
+		}
+		System.out.println(al1);
+
+	}
+
+}

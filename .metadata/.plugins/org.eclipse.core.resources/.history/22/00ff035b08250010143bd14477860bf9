@@ -1,0 +1,9 @@
+package PrimeOrNotPrime;
+
+public class PrimeOrNotPrime {
+
+	public PrimeOrNotPrime() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

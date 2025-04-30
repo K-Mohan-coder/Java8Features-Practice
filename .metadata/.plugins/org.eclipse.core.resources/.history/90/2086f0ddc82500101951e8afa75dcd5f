@@ -1,0 +1,9 @@
+package Java8Feature;
+
+public class StreamMapPrgs {
+
+	public StreamMapPrgs() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
