@@ -1,0 +1,9 @@
+package Java8Feature;
+
+public class OptionalClass {
+
+	public OptionalClass() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

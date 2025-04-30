@@ -1,0 +1,9 @@
+package Java8Feature;
+
+public class DistinctExample {
+
+	public DistinctExample() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
